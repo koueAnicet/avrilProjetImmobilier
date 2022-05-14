@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Immobilier--Souscription | Acquisition </title>
+    <!-- MDB icon -->
+    <link rel="icon" href="{% static 'img/mdb-favicon.ico' %}" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <h1 class="text-center"> Bienvenue sur ma page Immobilier</h1>
+    <div class="header">
+        <div class="logo">
+            <img src="" alt="">
+        </div> 
+        <div class="navbar">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'souscription' %}">Souscription</a>
+            <a href="{% url 'vente' %}">Vente</a>
+            <a class="link" href="{% url 'index' %}">Page
+                <ul class="page">
+                    <li> <a href="{% url 'proprietaire' %}">Propitaire</a></li>
+                    <li> <a href="{% url 'site' %}">Site</a></li>
+                    <li> <a href="{% url 'localite' %}">Localite</a></li>
+                </ul>
+            </a>
+            <a href="">Contact</a>
+        </div>
+       <div>
+           <img src="{% static '/GEBAT_Secteur_du_BTP.jpg' %}" alt="">
+       </div>
+    </div> 
+
+    <div class="btn btn-success">info</div>
+    <!-- MDB -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
+

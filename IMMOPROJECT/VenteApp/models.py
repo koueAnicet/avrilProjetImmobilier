@@ -36,8 +36,8 @@ class Acquereur(models.Model):
     prenom_acquereur = models.CharField(max_length=100)
     date_naiss_acquereur = models.DateField(null=True, blank=True)
     nationa_acquereur = models.CharField(max_length=20)
-    tel_acquereur = models.models.CharField( max_length=10)
-    email_acquereur = models.models.EmailField( max_length=254)
+    tel_acquereur = models.CharField( max_length=10)
+    email_acquereur = models.EmailField( max_length=254)
 
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(null=True)
